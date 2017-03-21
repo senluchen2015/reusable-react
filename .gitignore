@@ -29,3 +29,5 @@ node_modules
 # Ignore build files
 public
 web
+
+.DS_STORE
