@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import './section-wrapper.scss';
 
-const SectionWrapper = ({ id, title, children}) => {
+const SectionWrapper = ({ id, title, children, sourceLink }) => {
     return (
         <section id={id}>
             <h2>{title}</h2>
@@ -11,6 +11,7 @@ const SectionWrapper = ({ id, title, children}) => {
             <div className="pre-wrapper">
                 {children[1]}
             </div>
+            <a href={sourceLink}>Source</a>
         </section>
     );
 };
@@ -18,6 +19,7 @@ const SectionWrapper = ({ id, title, children}) => {
 SectionWrapper.propTypes = {
     id: PropTypes.string,
     title: PropTypes.string,
+    sourceLink: PropTypes.string,
     children: PropTypes.arrayOf(PropTypes.element),
 };
 

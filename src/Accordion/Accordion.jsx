@@ -29,7 +29,7 @@ class Accordion extends React.Component {
 
 Accordion.propTypes = {
     title: PropTypes.string,
-    children: PropTypes.element,
+    children: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default Accordion;

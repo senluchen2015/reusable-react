@@ -7,6 +7,10 @@ const componentList = [
         id: 'accordion',
         component: <AccordionComponent id="accordion"/>,
     },
+    {
+        name: 'Sortable Table',
+        id: 'sortable-table',
+    },
 ];
 
 export default componentList;

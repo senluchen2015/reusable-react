@@ -10,8 +10,8 @@ class Root extends React.Component {
                 <div className="root" >
                     <Nav navList={componentList}/>
                     <div className="main-container">
-                        {componentList.map((c) => {
-                            return c.component;
+                        {componentList.map((c, idx) => {
+                            return <div key={idx}>{c.component}</div>;
                         })}
                     </div>
                 </div>
