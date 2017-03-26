@@ -15,7 +15,7 @@ class Accordion extends React.Component {
         const { title, children } = this.props;
         const { visible } = this.state;
         return (
-            <div className="react-component accordion">
+            <div className="reusable-react accordion">
                 <label className={visible && 'open'} onClick={this.toggle.bind(this)}>
                     {title}
                 </label>

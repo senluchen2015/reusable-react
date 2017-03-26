@@ -37,7 +37,7 @@ loaders.push({
 
 module.exports = {
     entry: [
-        './src/index.js',
+        './src/index.jsx',
     ],
     output: {
         path: path.join(__dirname, 'web'),
