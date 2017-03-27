@@ -1,0 +1,23 @@
+.reusable-react {
+    &.progress-bar {
+        height: 2em;
+        width: 100%;
+        border-radius: 0.5em;
+        background: lightgray;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+        .progress {
+            transition: all 0.5s ease;
+            background: orange;
+            height: 100%;
+            border-radius: 0.5em;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            overflow: hidden;
+            p {
+                padding-right: 10px;
+                color: black;
+            }
+        }
+    }
+}
